@@ -40,7 +40,10 @@ body {
     background-color: #202020;
     padding: 10px;
     gap:5px;
-
+    
+  }
+  .unlocked {
+    grid-template-columns: auto auto auto auto auto;
   }
 .btns {
     background-color: #3b3b3b;
@@ -61,4 +64,7 @@ body {
 }
 .unhide {
     display: block;
+}
+.footer {
+  color: white;
 }

@@ -11,32 +11,53 @@
     <div class="container">
         <h1>Calculator</h1>
         <div class="screen-container">
-            <span class="history" style="color: #585858;font-size: 24px;padding-top: 7px;"></span>
+            <span class="calcHistory" style="color: #585858;font-size: 24px;padding-top: 7px;"></span>
             <span class="screen"></span>
         </div>
         <div class="btns-container">
+            <!-- row 0 -->
+            <button class="btns hide" onclick="symbol('ln')">ln</button>
+            <button class="btns hide" onclick="symbol('log')">log</button>
+            <button class="btns hide" onclick="symbol('sin')">sin</button>
+            <button class="btns hide" onclick="symbol('cos')">cos</button>
+            <button class="btns hide" onclick="symbol('tan')">tan</button>
+            <!-- row 1 -->
+            <button class="btns hide" onclick="symbol('^')"><img src="images/power.png" width="32px"></button>
             <button class="btns" onclick="clearAll()">CE</button>
             <button class="btns" onclick="clearScreen()"><img src="images/icons8-clear-symbol-48.png" width="35px"></button>
             <button class="btns" onclick="symbol('%')">&percnt;</button>
             <button class="btns" onclick="symbol('/')">&divide;</button>
+            <!-- row 2 -->
+            <button class="btns hide" onclick="symbol('factorial')">X!</button>
             <button class="btns" onclick="number(7)">7</button>
             <button class="btns" onclick="number(8)">8</button>
             <button class="btns" onclick="number(9)">9</button>  
             <button class="btns" onclick="symbol('x')">&times;</button>
+            <!-- row 3 -->
+            <button class="btns hide" onclick="symbol('invert')">1/X</button>
             <button class="btns" onclick="number(4)">4</button>
             <button class="btns" onclick="number(5)">5</button>  
             <button class="btns" onclick="number(6)">6</button>
             <button class="btns" onclick="symbol('-')">&minus;</button>
+            <!-- row 4 -->
+            <button class="btns hide" onclick="symbol('pi')">&pi;</button>
             <button class="btns" onclick="number(1)">1</button>
             <button class="btns" onclick="number(2)">2</button>  
             <button class="btns" onclick="number(3)">3</button>
             <button class="btns" onclick="symbol('+')">&plus;</button>
+            <!-- row 5 -->
             <button class="btns" onclick="unlockAll()"><img src="images/icons8-uncheck-all-50.png" width="35px"></button>
+            <button class="btns hide" onclick="symbol('e')">e</button>
             <button class="btns" onclick="number(0)">0</button>  
             <button class="btns" onclick="number('.')">&#8729;</button>
             <button class="btns" onclick="symbol('=')">&equals;</button>
+            
         </div>
+        <div class="footer">
+            <p>Copyright © Ahmed N. 2022. All Rights Reserved</p>
+          </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
