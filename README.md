@@ -17,8 +17,6 @@ Use this [link](https://ahmed-nd.github.io/Calculator/) to run the web site
 | ![Pages 3](readme_images/img3.png) |
 | ![Pages 4](readme_images/img4.png) |
 
-## License
-> This project is licensed under the MIT License – see the LICENSE file for details
 ## Author
 
 #### Ahmed Nasser
