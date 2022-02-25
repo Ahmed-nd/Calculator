@@ -6,7 +6,7 @@
 
 ## How to run
 
-Use this [link]() to run the web site
+Use this [link](https://ahmed-nd.github.io/Calculator/) to run the web site
 
 ## Gallery
 
