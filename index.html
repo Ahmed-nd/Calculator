@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="screen-container">
+            <span class="history" style="color: #585858;font-size: 24px;padding-top: 7px;"></span>
+            <span class="screen"></span>
+        </div>
+        <div class="btns-container">
+            <button class="btns" onclick="clearAll()">CE</button>
+            <button class="btns" onclick="clearScreen()"><img src="images/icons8-clear-symbol-48.png" width="35px"></button>
+            <button class="btns" onclick="symbol('%')">&percnt;</button>
+            <button class="btns" onclick="symbol('/')">&divide;</button>
+            <button class="btns" onclick="number(7)">7</button>
+            <button class="btns" onclick="number(8)">8</button>
+            <button class="btns" onclick="number(9)">9</button>  
+            <button class="btns" onclick="symbol('x')">&times;</button>
+            <button class="btns" onclick="number(4)">4</button>
+            <button class="btns" onclick="number(5)">5</button>  
+            <button class="btns" onclick="number(6)">6</button>
+            <button class="btns" onclick="symbol('-')">&minus;</button>
+            <button class="btns" onclick="number(1)">1</button>
+            <button class="btns" onclick="number(2)">2</button>  
+            <button class="btns" onclick="number(3)">3</button>
+            <button class="btns" onclick="symbol('+')">&plus;</button>
+            <button class="btns" onclick="unlockAll()"><img src="images/icons8-uncheck-all-50.png" width="35px"></button>
+            <button class="btns" onclick="number(0)">0</button>  
+            <button class="btns" onclick="number('.')">&#8729;</button>
+            <button class="btns" onclick="symbol('=')">&equals;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
