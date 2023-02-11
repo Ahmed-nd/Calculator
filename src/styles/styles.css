@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +36,7 @@ header, footer {
   text-align: center;
 }
 .screen-layout {
+  border: 3px solid blue;
   display: grid;
   grid-template-rows: auto auto;
   text-align: left;
@@ -41,17 +47,15 @@ header, footer {
   color: #585858;
 }
 .btns-layout {
-  padding: 1.25rem;
+  border: 3px solid yellow;
+  padding: 0.25rem;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
 }
-
-.unlocked {
-  grid-template-columns: auto auto auto auto auto;
-}
-.simple-calc {
+button{
   background-color: #3b3b3b;
+  /* grid: 1 / 1; */
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -61,15 +65,44 @@ header, footer {
   text-decoration: none;
   border: none;
 }
-.simple-calc:hover {
+.btns-layout > div {
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.75rem;
+}
+button:hover {
   background-color: #323232;
 }
-.advance-calc {
-  display: none;
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 60px;
+  }
 }
 
-@media (min-width: 35em) {
-  /* .main {
-    grid-template-columns: 1fr;
-  } */
+@media (min-width: 400px) and (min-height: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+  html {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  html {
+    font-size: 50px;
+  }
 }
