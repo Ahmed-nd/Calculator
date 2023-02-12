@@ -53,9 +53,17 @@ header, footer {
   grid-template-columns: 1fr;
   gap: 0.75rem;
 }
-button{
+.UA-icon {
+  background:transparent url(../images/icons8-uncheck-all-50.webp) no-repeat center;
+}
+.power-icon {
+  background:transparent url(../images/power.webp) no-repeat center;
+}
+.cls-icon {
+  background:transparent url(../images/icons8-clear-symbol-48.webp) no-repeat center;
+}
+button, .UA-icon, .power-icon, .cls-icon{
   background-color: #3b3b3b;
-  /* grid: 1 / 1; */
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -65,44 +73,20 @@ button{
   text-decoration: none;
   border: none;
 }
+
+
 .btns-layout > div {
   border: 3px solid red;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
 }
 button:hover {
   background-color: #323232;
 }
-.hide {
+.hidden {
   display: none !important;
 }
-@media screen and (max-width: 400px) {
-  html {
-    font-size: 60px;
-  }
-}
-
-@media (min-width: 400px) and (min-height: 400px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 500px) and (min-height: 500px) {
-  html {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 600px) and (min-height: 600px) {
-  html {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 800px) and (min-height: 800px) {
-  html {
-    font-size: 50px;
-  }
+.unhidden {
+  display: block !important;
 }

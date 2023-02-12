@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/styles/styles.css">
-    <script src="../src/js/logic/script.js" async defer></script>
+   
     <title>Calculator</title>
 </head>
 
@@ -22,24 +22,24 @@
             </div>
             <div class="btns-layout">
                 <!-- row 0 -->
-                <div class="hide">
-                    <button value="ln" type="button">ln</button>
-                    <button value="log" type="button">log</button>
-                    <button value="sin" type="button">sin</button>
-                    <button value="cos" type="button">cos</button>
-                    <button value="tan" type="button">tan</button>
+                <div>
+                    <button class="hidden" value="ln" type="button">ln</button>
+                    <button class="hidden" value="log" type="button">log</button>
+                    <button class="hidden" value="sin" type="button">sin</button>
+                    <button class="hidden" value="cos" type="button">cos</button>
+                    <button class="hidden" value="tan" type="button">tan</button>
                 </div>
                 <!-- row 1 -->
                 <div>
-                    <button class="hide" value="^" title="^" type="button"><img src="../src/images/power.webp" alt=""></button>
+                    <button class="power-icon hidden" value="^" title="^" type="button"></button>
                     <button value="CE" type="button">CE</button>
-                    <button value="cls" title="cls" type="button"><img src="../src/images/icons8-clear-symbol-48.png" alt=""></button>
+                    <button class="cls-icon" value="cls" title="cls" type="button"></button>
                     <button value="%" type="button">%</button>
                     <button value="÷" type="button">÷</button>
                 </div>
                 <!-- row 2 -->
                 <div>
-                    <button class="hide" value="X!" type="button">X!</button>
+                    <button class="hidden" value="X!" type="button">X!</button>
                     <button value="7" type="button">7</button>
                     <button value="8" type="button">8</button>
                     <button value="9" type="button">9</button>
@@ -47,7 +47,7 @@
                 </div>
                 <!-- row 3 -->
                 <div>
-                    <button class="hide" value="1/X" type="button">1/X</button>
+                    <button class="hidden" value="1/X" type="button">1/X</button>
                     <button value="4" type="button">4</button>
                     <button value="5" type="button">5</button>
                     <button value="6" type="button">6</button>
@@ -55,7 +55,7 @@
                 </div>
                 <!-- row 4 -->
                 <div>
-                    <button class="hide" value="&pi;" type="button">&pi;</button>
+                    <button class="hidden" value="&pi;" type="button">&pi;</button>
                     <button value="1" type="button">1</button>
                     <button value="2" type="button">2</button>
                     <button value="3" type="button">3</button>
@@ -63,11 +63,10 @@
                 </div>
                 <!-- row 5 -->
                 <div>
-                    <button value="uncheck" title="uncheck all" type="button"><img src="../src/images/icons8-uncheck-all-50.png"
-                            alt=""></button>
-                    <button class="hide" value="e" type="button">e</button>
+                    <button class="UA-icon" value="SAC" title="show Advance Calculator" type="button"></button>
+                    <button class="hidden" value="e" type="button">e</button>
                     <button value="0" type="button">0</button>
-                    <button value="&#8729;" type="button">&#8729;</button>
+                    <button value="." type="button">.</button>
                     <button value="&equals;" type="button">&equals;</button>
                 </div>
             </div>
@@ -77,6 +76,13 @@
         </footer>
     </div>
 
+    <script src="../src/js/logic/button.js" ></script>
+    <script src="../src/js/logic/calculator.js" ></script>
+    <script src="../src/js/logic/script.js" ></script>
+    <script src="../src/js/utilities/factorial.js" ></script>
+    <script src="../src/js/component/events.js" ></script>
+    <script src="../src/js/component/app.js" ></script>
+    
 </body>
 
 </html>
