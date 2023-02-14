@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/styles/styles.css">
-   
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Calculator</title>
 </head>
 
@@ -31,19 +30,19 @@
                 </div>
                 <!-- row 1 -->
                 <div>
-                    <button class="power-icon hidden" value="^" title="^" type="button"></button>
+                    <button class="power-icon hidden" value="power" title="power" type="button"></button>
                     <button value="CE" type="button">CE</button>
                     <button class="cls-icon" value="cls" title="cls" type="button"></button>
-                    <button value="%" type="button">%</button>
-                    <button value="÷" type="button">÷</button>
+                    <button value="modulo" type="button">%</button>
+                    <button value="divide" type="button">÷</button>
                 </div>
                 <!-- row 2 -->
                 <div>
-                    <button class="hidden" value="X!" type="button">X!</button>
+                    <button class="hidden" value="factorial" type="button">!X</button>
                     <button value="7" type="button">7</button>
                     <button value="8" type="button">8</button>
                     <button value="9" type="button">9</button>
-                    <button value="&times;" type="button">&times;</button>
+                    <button value="multiply" type="button">&times;</button>
                 </div>
                 <!-- row 3 -->
                 <div>
@@ -51,7 +50,7 @@
                     <button value="4" type="button">4</button>
                     <button value="5" type="button">5</button>
                     <button value="6" type="button">6</button>
-                    <button value="&minus;" type="button">&minus;</button>
+                    <button value="substitution" type="button">&minus;</button>
                 </div>
                 <!-- row 4 -->
                 <div>
@@ -59,12 +58,12 @@
                     <button value="1" type="button">1</button>
                     <button value="2" type="button">2</button>
                     <button value="3" type="button">3</button>
-                    <button value="&plus;" type="button">&plus;</button>
+                    <button value="addaction" type="button">&plus;</button>
                 </div>
                 <!-- row 5 -->
                 <div>
                     <button class="UA-icon" value="SAC" title="show Advance Calculator" type="button"></button>
-                    <button class="hidden" value="e" type="button">e</button>
+                    <button class="hidden" value="euler" type="button">e</button>
                     <button value="0" type="button">0</button>
                     <button value="." type="button">.</button>
                     <button value="&equals;" type="button">&equals;</button>
@@ -72,16 +71,12 @@
             </div>
         </main>
         <footer>
-            <p>Copyright © All Rights Reserved</p>
+            <p><a rel="noopener" href="https://github.com/ahmed-n-abdeltwab/Calculator" target="_blank">Fork Me</a> On Github</p>
         </footer>
     </div>
-
-    <script src="../src/js/logic/button.js" ></script>
-    <script src="../src/js/logic/calculator.js" ></script>
-    <script src="../src/js/logic/script.js" ></script>
-    <script src="../src/js/utilities/factorial.js" ></script>
-    <script src="../src/js/component/events.js" ></script>
-    <script src="../src/js/component/app.js" ></script>
+    <script src="js/button.js" ></script>
+    <script src="js/calculator.js" ></script>
+    <script src="js/app.js" ></script>
     
 </body>
 
