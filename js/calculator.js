@@ -1,5 +1,5 @@
 const getConstant = {
-    pi: Math.PI,
+    π: Math.PI,
     e: Math.E,
 };
 
