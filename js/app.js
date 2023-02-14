@@ -53,14 +53,14 @@ const getKeyByValue = (obj, value) =>
   Object.keys(obj).find((key) => obj[key] === value);
 
 function whatEquation(string) {
- const matches = string.match(
-    /([0-9]+\.?[0-9]*)(.){1}([0-9]+\.?[0-9]*)|([a-z]+)\s?([0-9]+\.?[0-9]*)/
+  const groups = 6;
+  const matches = string.match(
+    /([0-9]+\.?[0-9]*)(.){1}([0-9]+\.?[0-9]*)|([a-z]+|!)\s?([0-9]+\.?[0-9]*)/
   );
   if (matches) {
     let equation = { operator: "", numbers: [] };
-    for (let group = 1; group < matches.length; group++) {
+    for (let group = 1; group < groups; group++) {
       if (!matches[group]) continue;
-
       if (isNumber(matches[group])) {
         equation.numbers.push(matches[group]);
       } else {
@@ -74,6 +74,12 @@ function whatEquation(string) {
     return { type: "operator", value: equation };
   }
   return null;
+}
+
+function whatConstants(constant) {
+  return constant in constants
+    ? { type: "constant", value: constants[constant] }
+    : undefined;
 }
 
 function caculator(target) {
@@ -93,7 +99,9 @@ function caculator(target) {
   // calculating what on screen
   if (target.value === "=") {
     try {
-      const newCalculations = isOperator(onScreen[0]) ? onHistoryScreen + onScreen : onScreen;
+      const newCalculations = isOperator(onScreen[0])
+        ? onHistoryScreen + onScreen
+        : onScreen;
       const equation = whatEquation(newCalculations);
       const result = calculation(equation);
       writeOnHistoryScreen(result);
@@ -101,8 +109,12 @@ function caculator(target) {
     } catch (error) {
       console.log(error.message);
     }
-    
-    
+  }
+
+  if (target.type === "constant") {
+    const constant = whatConstants(target.value);
+    const result = calculation(constant);
+    writeOnScreen(result);
   }
 
   // show Advance Calculator screen
