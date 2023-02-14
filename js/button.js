@@ -21,15 +21,15 @@ const operators = {
   modulo: "%",
   invert: "1÷",
   power: "^",
-  ln: "ln ",
-  log: "log ",
-  sin: "sin ",
-  cos: "cos ",
-  tan: "tan ",
+  ln: "ln",
+  log: "log",
+  sin: "sin",
+  cos: "cos",
+  tan: "tan",
   factorial: "!"
 };
 const constants = {
-  pi:'pi',
+  pi:'π',
   euler:'e'
 }
 // identify the button
